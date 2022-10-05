@@ -13,6 +13,12 @@ const anotherFunction = () => {
 anotherFunction() //anotherFunction() returns .then()
   .then(response => console.log(response)) //promise method .then() receive parameters
   .catch(err => console.log(err))
+  
+//esta usando una funcion callback, callback es una funcion que usa a otra funcion como argumento.
+//En cuanto a los metodos then y catch, estos son metodos que pertenecen al objeto promise.
+//Estos metodos son usados para en la promise (anotherFunction), para mostrar el estado de esta promesa, 
+//que puede tener 2 estados, aceptada, que la retorna el METODO THEN y RECHAZADA que la retorna el METODO CATCH
+
 
 // another example
 
