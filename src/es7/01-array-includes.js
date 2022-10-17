@@ -10,8 +10,6 @@ console.log(list.includes('diego')) // false
 
 // lowercase list with map
 
-const lowerList = list.map(element =>{
-  return element.toLowerCase()
-})
+const lowerList = list.map(item => item.toLowerCase())
 
 console.log(lowerList.includes('diego')) // true
