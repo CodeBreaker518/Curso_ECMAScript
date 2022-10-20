@@ -33,7 +33,7 @@ console.log('After')
 const sendData = () => {
   return new Promise((resolve, reject) =>{
     (true)
-    ? setTimeout(() => resolve('Data send!'), 2000)
+    ? setTimeout(() => resolve('Data saved!'), 2000)
     : reject(new Error("Error: Couldn't send data!!"))
   })
 }
@@ -42,7 +42,7 @@ const getData = async () =>{
   const data = await sendData()
   console.log(data)
 }
-console.log('Encrypted data')
+console.log('=> Data send!')
 getData()
 console.log('Waiting data...')
 
