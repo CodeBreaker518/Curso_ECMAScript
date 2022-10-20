@@ -8,8 +8,8 @@ const list = ['Diego', 'David', 'Ana']
 console.log(list.includes('Diego')) // true
 console.log(list.includes('diego')) // false
 
-// lowercase list with map
-
-const lowerList = list.map(item => item.toLowerCase())
-
-console.log(lowerList.includes('diego')) // true
+//this part of code, made the first letter of the first element of the array into UpperCase, and the left to LowerCase
+for (let name of list){
+  name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
+  console.log(name)
+}
